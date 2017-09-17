@@ -1,0 +1,90 @@
+.main-menu {
+	.nav-item:hover {
+		.nav-link:before {
+			background-color: @cyan;
+			transition-duration: .2s;
+		}
+	}
+}
+.user {
+	&__colors {
+		input:hover {
+			cursor: pointer;
+		}
+	}
+}
+.account-lvl {
+	.nav-item:hover {
+		.nav-link {
+			color: @cyan;
+			border-bottom: 2px solid @cyan;
+			transition-duration: .2s;
+		}
+	}
+}
+.products{
+	.product__card {
+		&.active {
+			width: 50%;
+			z-index: 100;
+			.product__card_body {
+				display: inline-block;
+			}
+			.product__card_img {
+				width: 250px;
+				height: auto;
+			}
+			.product__card_title {
+				margin-bottom: 40px;
+			}
+			.product__card_text {
+				display: block;
+			}
+			.btn-outline-info {
+				display: block;
+				&:hover, &:active {
+					background-color: @cyan;
+					color: #fff;
+					transition-duration: .2s;
+				}
+				&:focus {
+					box-shadow: 0 0 0 3px rgba(50,206,255,.5);
+				}
+			}
+			.card_body_left {
+				float: left;
+				width: 50%;
+			}
+			.card_body_right {
+				float: right;
+				width: 50%;
+			}
+		}
+	}
+}
+.modal {
+	&__footer {
+		.btn-cta:hover {
+			cursor: pointer;
+		}
+	}
+}
+.aside {
+	&__search {
+		&_icon:hover {
+			cursor: pointer;
+		}
+		&_close:hover {
+			cursor: pointer;
+		}
+	}
+	&__share-to {
+		&_friends.active {
+			color: @cyan;
+			border-bottom: 2px solid @cyan;
+			.svg-icon {
+				fill: @cyan;
+			}
+		}
+	}
+}
