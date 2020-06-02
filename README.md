@@ -1,3 +1,1 @@
-# test-bts
-npm i
-gulp build
+# travel-blog

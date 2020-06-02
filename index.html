@@ -1,0 +1,453 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My travel Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./bootstrap-reboot.min.css" />
+  <link rel="stylesheet" href="./bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+  <!-- <HEADER> -->
+  <header class="container-fluid">
+    <div class="row header-inner align-items-center justify-content-between">
+      <nav class="col menu">
+        <div class="menu__burger d-md-none" id="burger"></div>
+        <ul class="menu__list d-none d-md-flex justify-content-md-end">
+          <li class="menu__item">Home
+            <ul class="submenu__list">
+              <li class="submenu__item">World news</li>
+              <li class="submenu__item">Travel</li>
+              <li class="submenu__item">Technology</li>
+              <li class="submenu__item">City</li>
+              <li class="submenu__item">Culture</li>
+              <li class="submenu__item">More...</li>
+            </ul>
+          </li>
+          <li class="menu__item">Discovery</li>
+          <li class="menu__item">Photos</li>
+          <li class="menu__item">Contact</li>
+        </ul>
+      </nav>
+      <div class="col logo">
+        <picture>
+          <source srcset="./assets/LOGO-red.png" media="(min-width: 768px)">
+          <img src="./assets/LOGO.png" alt="Logo" />
+        </picture>
+      </div>
+      <div class="col user-account">
+        <picture>
+          <source srcset="./assets/user@2x.png" media="(min-width: 768px)">
+          <img src="./assets/user.png" class="user-account__avatar" alt="User Name" />
+        </picture>
+      </div>
+    </div>
+  </header>
+  <!-- </HEADER> -->
+
+  <!-- <FIRST-SCREEN> -->
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- <LEFT-SIDE> -->
+      <div class="col-sm-12 col-md-8 news">
+        <section class="banner-content">
+          <h1 class="title">World news</h1>
+          <div class="separator"></div>
+          <h3 class="subtitle">Amazing places in America to visit.</h3>
+          <div class="banner-content__description">
+            For some reason&nbsp;&mdash;&nbsp;this country, this city, this neighborhood, this particular
+            street&nbsp;&ndash;&nbsp;
+            is the place you are living a majority of your life in.
+          </div>
+          <a href="./?read-more" class="banner-content__button">
+            Learn more
+          </a>
+        </section>
+      </div>
+      <!-- </LEFT-SIDE> -->
+
+      <!-- <RIGHT-SIDE> -->
+      <div class="col-sm-12 col-md-4 more-news">
+        <section>
+          <div class="d-flex justify-content-between align-items-center">
+            <h1 class="title">More news</h2>
+              <div class="arrows"></div>
+          </div>
+          <div class="separator"></div>
+
+          <!-- <NEWS-ITEM#1> -->
+          <div class="news-item">
+            <h2 class="news-item__topic">
+              Travel
+            </h2>
+            <h3 class="news-item__title">
+              Article title
+            </h3>
+            <div class="news-item__description">
+              Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…
+            </div>
+            <div class="time">2m ago</div>
+          </div>
+          <!-- </NEWS-ITEM> -->
+
+          <!-- <NEWS-ITEM#2> -->
+          <div class="news-item">
+            <h2 class="news-item__topic">
+              Technology
+            </h2>
+            <h3 class="news-item__title">
+              Article title
+            </h3>
+            <div class="news-item__description">
+              Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…
+            </div>
+            <div class="time">1h ago</div>
+          </div>
+          <!-- </NEWS-ITEM> -->
+
+        </section>
+      </div>
+      <!-- </RIGHT-SIDE> -->
+    </div>
+  </div>
+  <!-- </FIRST-SCREEN> -->
+
+  <!-- <MAIN> -->
+  <main>
+    <!-- <TRENDING> -->
+    <div class="container-fluid trending">
+      <div class="row trending__title-container">
+        <div class="d-flex flex-grow-1 mb justify-content-between align-items-center">
+          <h1 class="title">Trending</h1>
+          <div class="arrows"></div>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <!-- <TRENDING-ITEM#1> -->
+        <figure class="col-sm-12 col-md-3 p-0 card">
+          <picture>
+            <source srcset="./assets/tranding-1@2x.png" media="(min-width: 480px)">
+            <img src="./assets/tranding-1.png" width="100%" height="auto" alt="Tranding 1">
+          </picture>
+          <figcaption class="card__content">
+            <div class="card__title">Dolore magna aliqua</div>
+            <div class="card__description">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat.
+            </div>
+            <div class="time">2m ago</div>
+          </figcaption>
+        </figure>
+        <!-- </TRENDING-ITEM#1> -->
+
+        <!-- <TRENDING-ITEM#2> -->
+        <figure class="col-sm-12 col-md-3 p-0 card">
+          <picture>
+            <source srcset="./assets/tranding-2@2x.png" media="(min-width: 480px)">
+            <img src="./assets/tranding-2.png" width="100%" height="auto" alt="Tranding 2">
+          </picture>
+          <figcaption class="card__content">
+            <div class="card__title">Morbi eleifend a libero</div>
+            <div class="card__description">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat.
+            </div>
+            <div class="time">1h ago</div>
+          </figcaption>
+        </figure>
+        <!-- </TRENDING-ITEM#2> -->
+
+        <!-- <TRENDING-ITEM#3> -->
+        <figure class="col-sm-12 col-md-3 p-0 d-none d-sm-block card">
+          <picture>
+            <source srcset="./assets/tranding-3@2x.png" media="(min-width: 480px)">
+            <img src="./assets/tranding-3.png" width="100%" height="auto" alt="Tranding 3">
+          </picture>
+          <figcaption class="card__content">
+            <div class="card__title">Morbi eleifend a libero</div>
+            <div class="card__description">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat.
+            </div>
+            <div class="time">3h ago</div>
+          </figcaption>
+        </figure>
+        <!-- </TRENDING-ITEM#3> -->
+      </div>
+    </div>
+    <!-- </TRENDING> -->
+
+    <!-- <HAPPENING-NOW> -->
+    <div class="container-fluid happening-now">
+      <div class="row trending__title-container">
+        <div class="d-flex flex-grow-1 mb justify-content-between align-items-center">
+          <h1 class="title">Happening now</h1>
+          <div class="arrows"></div>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <!-- <LEFT-SIDE> -->
+        <div class="col-sm-12 p-0 col-md-8">
+
+          <!-- <LARGE-ARTICLE#1> -->
+          <figure class="large-card">
+            <picture>
+              <source srcset="./assets/article-large-1@2x.png" media="(min-width: 480px)">
+              <img src="./assets/article-large-1.png" alt="Article Large 1">
+            </picture>
+            <figcaption class="large-card__content d-flex flex-column justify-content-between">
+              <div class="large-card__topic">City</div>
+              <div>
+                <div class="large-card__title">Large article title</div>
+                <div class="large-card__description">Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam
+                  detracto, vidit vituperatoribus duo id. Affert detraxit voluptatum vis eu, inermis eloquentiam.
+                </div>
+                <div class="time">2m ago</div>
+              </div>
+            </figcaption>
+          </figure>
+          <!-- </LARGE-ARTICLE#1> -->
+
+          <!-- <LARGE-ARTICLE#2> -->
+          <figure class="large-card">
+            <picture>
+              <source srcset="./assets/article-large-2@2x.png" media="(min-width: 480px)">
+              <img src="./assets/article-large-2.png" alt="Article Large 2">
+            </picture>
+            <figcaption class="large-card__content d-flex flex-column justify-content-between">
+              <div class="large-card__topic">Travel</div>
+              <div>
+                <div class="large-card__title">Large article title</div>
+                <div class="large-card__description">Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam
+                  detracto, vidit vituperatoribus duo id. Affert detraxit voluptatum vis eu, inermis eloquentiam.
+                </div>
+                <div class="time">2m ago</div>
+              </div>
+            </figcaption>
+          </figure>
+          <!-- </LARGE-ARTICLE#2> -->
+
+        </div>
+        <!-- </LEFT-SIDE> -->
+
+        <!-- <SEPARATOR> -->
+        <div class="separator d-sm-none d-block "></div>
+        <!-- </SEPARATOR> -->
+
+        <!-- <RIGHT-SIDE> -->
+        <div class="col-sm-12 p-0 col-md-3">
+          <div class="container">
+
+            <!-- <SMALL-ARTICLE#1> -->
+            <figure class="row card">
+              <picture>
+                <source srcset="./assets/article-small-1@2x.png" media="(min-width: 480px)">
+                <img src="./assets/article-small-1.png" width="100%" height="auto" alt="Article small 1">
+              </picture>
+              <figcaption class="mt-3">
+                <div class="card__title">Small title</div>
+                <div class="time">2m ago <span class="author">by <a href="#worldnews"
+                      class="author__link">Worldnews</a></span></div>
+              </figcaption>
+            </figure>
+            <!-- </SMALL-ARTICLE#1> -->
+
+            <!-- <SMALL-ARTICLE#2> -->
+            <figure class="row card">
+              <picture>
+                <source srcset="./assets/article-small-2@2x.png" media="(min-width: 480px)">
+                <img src="./assets/article-small-2.png" width="100%" height="auto" alt="Article small 2">
+              </picture>
+              <figcaption class="mt-3">
+                <div class="card__title">Small title</div>
+                <div class="time">4h ago <span class="author">by <a href="#worldnews"
+                      class="author__link">Days</a></span></div>
+              </figcaption>
+            </figure>
+            <!-- </SMALL-ARTICLE#2> -->
+
+            <!-- <SMALL-ARTICLE#3> -->
+            <figure class="row card">
+              <picture>
+                <source srcset="./assets/article-small-3@2x.png" media="(min-width: 480px)">
+                <img src="./assets/article-small-3.png" width="100%" height="auto" alt="Article small 3">
+              </picture>
+              <figcaption class="mt-3">
+                <div class="card__title">Small title</div>
+                <div class="time">3h ago <span class="author">by <a href="#worldnews"
+                      class="author__link">Monica</a></span></div>
+              </figcaption>
+            </figure>
+            <!-- </SMALL-ARTICLE#3> -->
+          </div>
+        </div>
+        <!-- </RIGHT-SIDE> -->
+      </div>
+    </div>
+    <!-- </HAPPENING-NOW> -->
+  </main>
+  <!-- </MAIN> -->
+
+  <!-- <FOOTER> -->
+  <footer class="container-fluid d-none d-sm-block">
+    <div class="row footer-inner">
+      <div class="col-md-1 col-sm-12 footer-logo jusify-content-center align-items-center text-center">
+        <picture>
+          <source srcset="./assets/LOGO-white.png" media="(min-width: 768px)">
+          <img src="./assets/LOGO-white.png" alt="Logo" />
+        </picture>
+      </div>
+      <div class="col-md-3 col-sm-12 d-flex flex-column">
+        <div class="row footer-menu">
+          <div class="col-4 ">
+            <div>Home</div>
+            <div>Discovery</div>
+            <div>Photos</div>
+            <div>Contact</div>
+          </div>
+          <div class="col-4">
+            <div>About</div>
+            <div>Help</div>
+            <div>Terms</div>
+            <div>Guidlines</div>
+          </div>
+          <div class="col-4">
+            <div>Testimonials</div>
+            <div>Advertise</div>
+            <div>Integrations</div>
+            <div>Careers</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-12 text-center">
+        <div class="footer-subscribe">
+          <label class="footer-subscribe__label">
+            <input type="email" placeholder="Email" class="footer-subscribe__input">
+            <button type="button" class="footer-subscribe__button"></button>
+            <p>Stay in touch with us for the freshest products!</p>
+          </label>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-12">
+        <div class="socials d-flex justify-content-between">
+          <div class="socials__icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+              <path fill="#fff" fill-rule="evenodd"
+                d="M8,1.422a24.53,24.53,0,0,1,3.2.089,4.123,4.123,0,0,1,1.511.267,3.122,3.122,0,0,1,1.511,1.511A4.123,4.123,0,0,1,14.489,4.8c0,.8.089,1.067.089,3.2a24.53,24.53,0,0,1-.089,3.2,4.123,4.123,0,0,1-.267,1.511,3.122,3.122,0,0,1-1.511,1.511,4.123,4.123,0,0,1-1.511.267c-.8,0-1.067.089-3.2.089a24.53,24.53,0,0,1-3.2-.089,4.123,4.123,0,0,1-1.511-.267,3.122,3.122,0,0,1-1.511-1.511A4.123,4.123,0,0,1,1.511,11.2c0-.8-.089-1.067-.089-3.2a24.53,24.53,0,0,1,.089-3.2,4.123,4.123,0,0,1,.267-1.511A3.192,3.192,0,0,1,2.4,2.4a1.5,1.5,0,0,1,.889-.622A4.123,4.123,0,0,1,4.8,1.511,24.53,24.53,0,0,1,8,1.422M8,0A26.264,26.264,0,0,0,4.711.089,5.488,5.488,0,0,0,2.756.444a3.48,3.48,0,0,0-1.422.889A3.48,3.48,0,0,0,.444,2.756,4.05,4.05,0,0,0,.089,4.711,26.264,26.264,0,0,0,0,8a26.264,26.264,0,0,0,.089,3.289,5.488,5.488,0,0,0,.356,1.956,3.48,3.48,0,0,0,.889,1.422,3.48,3.48,0,0,0,1.422.889,5.488,5.488,0,0,0,1.956.356A26.264,26.264,0,0,0,8,16a26.264,26.264,0,0,0,3.289-.089,5.488,5.488,0,0,0,1.956-.356,3.729,3.729,0,0,0,2.311-2.311,5.488,5.488,0,0,0,.356-1.956C15.911,10.4,16,10.133,16,8a26.264,26.264,0,0,0-.089-3.289,5.488,5.488,0,0,0-.356-1.956,3.48,3.48,0,0,0-.889-1.422A3.48,3.48,0,0,0,13.244.444,5.488,5.488,0,0,0,11.289.089,26.264,26.264,0,0,0,8,0M8,3.911A4.023,4.023,0,0,0,3.911,8,4.089,4.089,0,1,0,8,3.911m0,6.756A2.619,2.619,0,0,1,5.333,8,2.619,2.619,0,0,1,8,5.333,2.619,2.619,0,0,1,10.667,8,2.619,2.619,0,0,1,8,10.667m4.267-7.911a.978.978,0,1,0,.978.978.986.986,0,0,0-.978-.978" />
+            </svg></div>
+          <div class="socials__icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12.978"
+              viewBox="0 0 16 12.978">
+              <path fill="#fff" fill-rule="evenodd"
+                d="M43.067,14.978A9.25,9.25,0,0,0,52.4,5.644V5.2A7.225,7.225,0,0,0,54,3.511a7.379,7.379,0,0,1-1.867.533,3.458,3.458,0,0,0,1.422-1.778,8.153,8.153,0,0,1-2.044.8A3.175,3.175,0,0,0,49.111,2a3.34,3.34,0,0,0-3.289,3.289A1.733,1.733,0,0,0,45.911,6a9.19,9.19,0,0,1-6.756-3.467,3.4,3.4,0,0,0-.444,1.689,3.532,3.532,0,0,0,1.422,2.756,3,3,0,0,1-1.511-.444h0a3.249,3.249,0,0,0,2.667,3.2,2.74,2.74,0,0,1-.889.089,1.513,1.513,0,0,1-.622-.089,3.367,3.367,0,0,0,3.111,2.311A6.711,6.711,0,0,1,38.8,13.467a2.461,2.461,0,0,1-.8-.089,8.39,8.39,0,0,0,5.067,1.6"
+                transform="translate(-38 -2)" />
+            </svg></div>
+          <div class="socials__icon"><svg xmlns="http://www.w3.org/2000/svg" width="8.356" height="16"
+              viewBox="0 0 8.356 16">
+              <path fill="#fff" fill-rule="evenodd"
+                d="M85.422,16V8.711h2.489l.356-2.844H85.422V4.089c0-.8.267-1.422,1.422-1.422h1.511V.089C88,.089,87.111,0,86.133,0a3.431,3.431,0,0,0-3.644,3.733V5.867H80V8.711h2.489V16Z"
+                transform="translate(-80)" />
+            </svg></div>
+          <div class="socials__icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+              <path fill="#fff" fill-rule="evenodd"
+                d="M2.4,2.4A7.263,7.263,0,0,1,8,0a7.263,7.263,0,0,1,5.6,2.4A7.263,7.263,0,0,1,16,8a7.263,7.263,0,0,1-2.4,5.6A7.263,7.263,0,0,1,8,16a7.263,7.263,0,0,1-5.6-2.4A7.984,7.984,0,0,1,0,8,7.263,7.263,0,0,1,2.4,2.4Zm6.667,12a3.276,3.276,0,0,0,2-1.2A5.824,5.824,0,0,0,12,10.4a2.208,2.208,0,0,0-.667-1.6A2.347,2.347,0,0,0,9.6,8H8.267a3.893,3.893,0,0,1-1.2-.267,1.21,1.21,0,0,1-.4-.933.693.693,0,0,1,.267-.533A1.011,1.011,0,0,1,7.467,6a.91.91,0,0,1,.667.4c.267.133.4.267.533.267A.8.8,0,0,0,9.2,6.533.8.8,0,0,0,9.333,6a2.122,2.122,0,0,0-.667-1.333,5.515,5.515,0,0,0,.667-2.533.287.287,0,0,0-.267-.267A4.122,4.122,0,0,0,8,1.6,6.67,6.67,0,0,0,4.533,2.667a3.357,3.357,0,0,0-1.2,2.667A3.414,3.414,0,0,0,4.4,7.867,3.643,3.643,0,0,0,6.933,8.933h0v.533A1.712,1.712,0,0,0,7.467,10.8a1.942,1.942,0,0,0,1.2.8V14c0,.133,0,.133.133.267S8.933,14.4,9.067,14.4Z" />
+            </svg></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- </FOOTER> -->
+
+  <!-- <MOBILE-SIDEMENU> -->
+  <aside class="mobile-sidemenu" id="mobile-sidemenu">
+    <div class="container">
+      <div class="row">
+        <header class="mobile-sidemenu__header col-12 d-flex justify-content-between align-items-baseline">
+          <div class="logo">
+            <picture>
+              <source srcset="./assets/LOGO-red@2x.png" media="(min-width: 768px)">
+              <img src="./assets/LOGO-red.png" alt="Logo" />
+            </picture>
+          </div>
+          <div class="mobile-sidemenu__close" id="mobile-sidemenu-close"></div>
+        </header>
+        <nav class="mobile__menu col-12">
+          <div class="mobile__menu-item row">
+            <div class="mobile__menu-item--icon p-0 col-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                viewBox="0 0 16 16">
+                <path fill="#343638" fill-rule="evenodd" d="M0,8,8,0l8,8v8H11V10H5v6H0Z" />
+              </svg></div>
+            <div class="mobile__menu-item--title col">Home</div>
+          </div>
+          <div class="mobile__menu-item row">
+            <div class="mobile__menu-item--icon p-0 col-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                viewBox="0 0 16 16">
+                <path fill="#343638" fill-rule="evenodd"
+                  d="M12,4,6.7,6.7,4,12,9.3,9.3ZM8,16a8,8,0,1,1,8-8A8.024,8.024,0,0,1,8,16Z" />
+              </svg></div>
+            <div class="mobile__menu-item--title col">Discovery</div>
+          </div>
+          <div class="mobile__menu-item row">
+            <div class="mobile__menu-item--icon p-0 col-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+                viewBox="0 0 16 14">
+                <path fill="#343638" fill-rule="evenodd" d="M0,0V14H16V0ZM14,12H11L6.5,7.5,2,12V2H14Z" />
+              </svg></div>
+            <div class="mobile__menu-item--title col">Photos</div>
+          </div>
+          <div class="mobile__menu-item row">
+            <div class="mobile__menu-item--icon p-0 col-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12"
+                viewBox="0 0 16 12">
+                <path fill="#343638" fill-rule="evenodd" d="M0,0V12H16V0ZM8,8,2,2H14Z" />
+              </svg></div>
+            <div class="mobile__menu-item--title col">Contact</div>
+          </div>
+          <div class="mobile__menu-item row">
+            <div class="mobile__menu-item--icon p-0 col-2 user-account justify-content-start">
+              <picture>
+                <source srcset="./assets/user@2x.png" media="(min-width: 768px)">
+                <img src="./assets/user.png" class="user-account__avatar" alt="User Name" />
+              </picture>
+            </div>
+            <div class="mobile__menu-item--title col">Profile</div>
+          </div>
+        </nav>
+      </div>
+      <div class="row">
+        <footer class="mobile-sidemenu__footer col-12">
+          <div class="row">
+            <div class="mobile-sidemenu__footer--item col-6">About</div>
+            <div class="mobile-sidemenu__footer--item col-6">Help</div>
+            <div class="mobile-sidemenu__footer--item col-6">Terms</div>
+            <div class="mobile-sidemenu__footer--item col-6">Guidlines</div>
+            <div class="mobile-sidemenu__footer--item col-6">Testimonials</div>
+            <div class="mobile-sidemenu__footer--item col-6">Advertise</div>
+            <div class="mobile-sidemenu__footer--item col-6">Integrations</div>
+            <div class="mobile-sidemenu__footer--item col-6">Careers</div>
+          </div>
+          <div class="socials d-flex justify-content-between">
+            <div class="socials__icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="#fff" fill-rule="evenodd"
+                  d="M8,1.422a24.53,24.53,0,0,1,3.2.089,4.123,4.123,0,0,1,1.511.267,3.122,3.122,0,0,1,1.511,1.511A4.123,4.123,0,0,1,14.489,4.8c0,.8.089,1.067.089,3.2a24.53,24.53,0,0,1-.089,3.2,4.123,4.123,0,0,1-.267,1.511,3.122,3.122,0,0,1-1.511,1.511,4.123,4.123,0,0,1-1.511.267c-.8,0-1.067.089-3.2.089a24.53,24.53,0,0,1-3.2-.089,4.123,4.123,0,0,1-1.511-.267,3.122,3.122,0,0,1-1.511-1.511A4.123,4.123,0,0,1,1.511,11.2c0-.8-.089-1.067-.089-3.2a24.53,24.53,0,0,1,.089-3.2,4.123,4.123,0,0,1,.267-1.511A3.192,3.192,0,0,1,2.4,2.4a1.5,1.5,0,0,1,.889-.622A4.123,4.123,0,0,1,4.8,1.511,24.53,24.53,0,0,1,8,1.422M8,0A26.264,26.264,0,0,0,4.711.089,5.488,5.488,0,0,0,2.756.444a3.48,3.48,0,0,0-1.422.889A3.48,3.48,0,0,0,.444,2.756,4.05,4.05,0,0,0,.089,4.711,26.264,26.264,0,0,0,0,8a26.264,26.264,0,0,0,.089,3.289,5.488,5.488,0,0,0,.356,1.956,3.48,3.48,0,0,0,.889,1.422,3.48,3.48,0,0,0,1.422.889,5.488,5.488,0,0,0,1.956.356A26.264,26.264,0,0,0,8,16a26.264,26.264,0,0,0,3.289-.089,5.488,5.488,0,0,0,1.956-.356,3.729,3.729,0,0,0,2.311-2.311,5.488,5.488,0,0,0,.356-1.956C15.911,10.4,16,10.133,16,8a26.264,26.264,0,0,0-.089-3.289,5.488,5.488,0,0,0-.356-1.956,3.48,3.48,0,0,0-.889-1.422A3.48,3.48,0,0,0,13.244.444,5.488,5.488,0,0,0,11.289.089,26.264,26.264,0,0,0,8,0M8,3.911A4.023,4.023,0,0,0,3.911,8,4.089,4.089,0,1,0,8,3.911m0,6.756A2.619,2.619,0,0,1,5.333,8,2.619,2.619,0,0,1,8,5.333,2.619,2.619,0,0,1,10.667,8,2.619,2.619,0,0,1,8,10.667m4.267-7.911a.978.978,0,1,0,.978.978.986.986,0,0,0-.978-.978" />
+              </svg></div>
+            <div class="socials__icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12.978"
+                viewBox="0 0 16 12.978">
+                <path fill="#fff" fill-rule="evenodd"
+                  d="M43.067,14.978A9.25,9.25,0,0,0,52.4,5.644V5.2A7.225,7.225,0,0,0,54,3.511a7.379,7.379,0,0,1-1.867.533,3.458,3.458,0,0,0,1.422-1.778,8.153,8.153,0,0,1-2.044.8A3.175,3.175,0,0,0,49.111,2a3.34,3.34,0,0,0-3.289,3.289A1.733,1.733,0,0,0,45.911,6a9.19,9.19,0,0,1-6.756-3.467,3.4,3.4,0,0,0-.444,1.689,3.532,3.532,0,0,0,1.422,2.756,3,3,0,0,1-1.511-.444h0a3.249,3.249,0,0,0,2.667,3.2,2.74,2.74,0,0,1-.889.089,1.513,1.513,0,0,1-.622-.089,3.367,3.367,0,0,0,3.111,2.311A6.711,6.711,0,0,1,38.8,13.467a2.461,2.461,0,0,1-.8-.089,8.39,8.39,0,0,0,5.067,1.6"
+                  transform="translate(-38 -2)" />
+              </svg></div>
+            <div class="socials__icon"><svg xmlns="http://www.w3.org/2000/svg" width="8.356" height="16"
+                viewBox="0 0 8.356 16">
+                <path fill="#fff" fill-rule="evenodd"
+                  d="M85.422,16V8.711h2.489l.356-2.844H85.422V4.089c0-.8.267-1.422,1.422-1.422h1.511V.089C88,.089,87.111,0,86.133,0a3.431,3.431,0,0,0-3.644,3.733V5.867H80V8.711h2.489V16Z"
+                  transform="translate(-80)" />
+              </svg></div>
+            <div class="socials__icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="#fff" fill-rule="evenodd"
+                  d="M2.4,2.4A7.263,7.263,0,0,1,8,0a7.263,7.263,0,0,1,5.6,2.4A7.263,7.263,0,0,1,16,8a7.263,7.263,0,0,1-2.4,5.6A7.263,7.263,0,0,1,8,16a7.263,7.263,0,0,1-5.6-2.4A7.984,7.984,0,0,1,0,8,7.263,7.263,0,0,1,2.4,2.4Zm6.667,12a3.276,3.276,0,0,0,2-1.2A5.824,5.824,0,0,0,12,10.4a2.208,2.208,0,0,0-.667-1.6A2.347,2.347,0,0,0,9.6,8H8.267a3.893,3.893,0,0,1-1.2-.267,1.21,1.21,0,0,1-.4-.933.693.693,0,0,1,.267-.533A1.011,1.011,0,0,1,7.467,6a.91.91,0,0,1,.667.4c.267.133.4.267.533.267A.8.8,0,0,0,9.2,6.533.8.8,0,0,0,9.333,6a2.122,2.122,0,0,0-.667-1.333,5.515,5.515,0,0,0,.667-2.533.287.287,0,0,0-.267-.267A4.122,4.122,0,0,0,8,1.6,6.67,6.67,0,0,0,4.533,2.667a3.357,3.357,0,0,0-1.2,2.667A3.414,3.414,0,0,0,4.4,7.867,3.643,3.643,0,0,0,6.933,8.933h0v.533A1.712,1.712,0,0,0,7.467,10.8a1.942,1.942,0,0,0,1.2.8V14c0,.133,0,.133.133.267S8.933,14.4,9.067,14.4Z" />
+              </svg></div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </aside>
+  <!-- </MOBILE-SIDEMENU> -->
+  <script src="./scripts.js"></script>
+</body>
+
+</html>
