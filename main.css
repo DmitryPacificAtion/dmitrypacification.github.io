@@ -207,7 +207,8 @@ header,
   color: #ffffff;
   font-family: 'Helvetica';
   font-weight: bold;
-  padding: 14px 38px;
+  padding: 13px 36px;
+  font-size: 11px;
   background-color: #fa6980;
   border-radius: 6px;
 }
@@ -262,8 +263,15 @@ header,
   max-width: 1024px;
   margin: 0 auto 40px;
 }
+.trending {
+  padding: 0 15px;
+}
 .trending__title-container {
   margin-bottom: 40px;
+}
+.card {
+  width: auto;
+  margin: 0 auto 16px;
 }
 .card__content {
   padding: 24px 32px;
@@ -488,6 +496,20 @@ footer {
     margin-left: 48px;
     width: 30px;
     height: 30px;
+  }
+  .trending {
+    padding: 0;
+  }
+  .card {
+    width: 360px;
+  }
+  .trending .card:nth-child(2) {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  .large-card {
+    max-width: 760px;
+    margin-right: 10px;
   }
   .footer-inner {
     flex-direction: row;
